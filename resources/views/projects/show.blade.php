@@ -7,13 +7,6 @@
             <a href="/projects" class="text-gray-500 hover:text-gray-600">My Projects</a> / {{ $project->title }}
         </p>
 
-
-        {{-- <img src="{{ $project->owner->gravatar }}" alt="{{ $project->owner->name }}" class="rounded-full w-12
-        h-12 border-2 border-white shadow mr-2">
-
-        @foreach ($project->members as $member)
-        <img src="{{ $member->gravatar }}" alt="{{ $member->name }}" class="rounded-full w-8 h-8 ml-2">
-        @endforeach --}}
         <a href="{{ $project->path() . '/edit' }}" class="button ml-10">Edit Project</a>
     </div>
 </header>
